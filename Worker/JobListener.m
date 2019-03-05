@@ -35,7 +35,7 @@
                          atIndex:0];
         }
 
-        job.answer = [[answer copy] autorelease];
+        job.answer = [answer copy];
 
         reply(job);
     }

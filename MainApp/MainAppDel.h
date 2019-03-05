@@ -12,11 +12,11 @@
 #define kServiceName @"com.sheepsystems.XPCDemoWorker"
 
 @property (assign) IBOutlet NSWindow* window;
-@property (retain) IBOutlet NSButton* button;
-@property (retain) IBOutlet NSTextField* textInField;
-@property (retain) IBOutlet NSTextField* textOutField;
-@property (retain) NSXPCConnection* connection;
-@property (retain) id<Worker> job;
+@property (strong) IBOutlet NSButton* button;
+@property (strong) IBOutlet NSTextField* textInField;
+@property (strong) IBOutlet NSTextField* textOutField;
+@property (strong) NSXPCConnection* connection;
+@property (strong) id<Worker> job;
 
 - (IBAction) doWork:(id)sender;
 

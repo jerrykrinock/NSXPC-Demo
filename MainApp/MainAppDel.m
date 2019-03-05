@@ -4,13 +4,6 @@
 
 @synthesize button, textInField, textOutField, connection, job;
 
-- (void)dealloc {
-	[connection suspend];
-	[connection release];
-	
-	[super dealloc];
-}
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	connection = [[NSXPCConnection alloc] initWithServiceName: kServiceName];
 	[connection setRemoteObjectInterface: [NSXPCInterface interfaceWithProtocol: @protocol(Worker)]];
@@ -23,8 +16,6 @@
             textOutField.stringValue = @"🙁 Too many characters";
         }) ;
 	}];
-	
-	[job retain];
 }
 
 - (IBAction)doWork:(id)sender {

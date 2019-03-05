@@ -12,12 +12,10 @@
 		48EC200E222E6944008ABD3F /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EC200D222E6944008ABD3F /* Job.m */; };
 		48EC200F222E6944008ABD3F /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EC200D222E6944008ABD3F /* Job.m */; };
 		B46490AF15BA402500EFDC38 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46490AE15BA402500EFDC38 /* Cocoa.framework */; };
-		B46490B915BA402500EFDC38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B46490B715BA402500EFDC38 /* InfoPlist.strings */; };
 		B46490BB15BA402500EFDC38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490BA15BA402500EFDC38 /* main.m */; };
 		B46490C215BA402500EFDC38 /* MainAppDel.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490C115BA402500EFDC38 /* MainAppDel.m */; };
 		B46490C515BA402600EFDC38 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B46490C315BA402600EFDC38 /* MainMenu.xib */; };
 		B46490D115BA404900EFDC38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46490D015BA404900EFDC38 /* Foundation.framework */; };
-		B46490D715BA404900EFDC38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B46490D515BA404900EFDC38 /* InfoPlist.strings */; };
 		B46490DA15BA404900EFDC38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490D915BA404900EFDC38 /* main.m */; };
 		B46490DF15BA406D00EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = B46490CF15BA404900EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc */; };
 		B46490EE15BA758C00EFDC38 /* JobListener.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490EC15BA758C00EFDC38 /* JobListener.m */; };
@@ -58,17 +56,13 @@
 		B46490B215BA402500EFDC38 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B46490B315BA402500EFDC38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B46490B615BA402500EFDC38 /* MainApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MainApp-Info.plist"; sourceTree = "<group>"; };
-		B46490B815BA402500EFDC38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B46490BA15BA402500EFDC38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B46490BC15BA402500EFDC38 /* MainApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MainApp-Prefix.pch"; sourceTree = "<group>"; };
 		B46490C015BA402500EFDC38 /* MainAppDel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainAppDel.h; sourceTree = "<group>"; };
 		B46490C115BA402500EFDC38 /* MainAppDel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainAppDel.m; sourceTree = "<group>"; };
 		B46490C415BA402600EFDC38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B46490CF15BA404900EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.sheepsystems.XPCDemoWorker.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46490D015BA404900EFDC38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B46490D415BA404900EFDC38 /* Worker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Worker-Info.plist"; sourceTree = "<group>"; };
-		B46490D615BA404900EFDC38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B46490D815BA404900EFDC38 /* Worker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Worker-Prefix.pch"; sourceTree = "<group>"; };
 		B46490D915BA404900EFDC38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B46490EB15BA758C00EFDC38 /* JobListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobListener.h; sourceTree = "<group>"; };
 		B46490EC15BA758C00EFDC38 /* JobListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobListener.m; sourceTree = "<group>"; };
@@ -153,41 +147,21 @@
 				B46490C015BA402500EFDC38 /* MainAppDel.h */,
 				B46490C115BA402500EFDC38 /* MainAppDel.m */,
 				B46490C315BA402600EFDC38 /* MainMenu.xib */,
-				B46490B515BA402500EFDC38 /* Supporting Files */,
+				B46490B615BA402500EFDC38 /* MainApp-Info.plist */,
+				B46490BA15BA402500EFDC38 /* main.m */,
 			);
 			path = MainApp;
-			sourceTree = "<group>";
-		};
-		B46490B515BA402500EFDC38 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B46490B615BA402500EFDC38 /* MainApp-Info.plist */,
-				B46490B715BA402500EFDC38 /* InfoPlist.strings */,
-				B46490BA15BA402500EFDC38 /* main.m */,
-				B46490BC15BA402500EFDC38 /* MainApp-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B46490D215BA404900EFDC38 /* Worker */ = {
 			isa = PBXGroup;
 			children = (
 				B46490D915BA404900EFDC38 /* main.m */,
-				B46490D315BA404900EFDC38 /* Supporting Files */,
+				B46490D415BA404900EFDC38 /* Worker-Info.plist */,
 				B46490EB15BA758C00EFDC38 /* JobListener.h */,
 				B46490EC15BA758C00EFDC38 /* JobListener.m */,
 			);
 			path = Worker;
-			sourceTree = "<group>";
-		};
-		B46490D315BA404900EFDC38 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B46490D415BA404900EFDC38 /* Worker-Info.plist */,
-				B46490D515BA404900EFDC38 /* InfoPlist.strings */,
-				B46490D815BA404900EFDC38 /* Worker-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46490B915BA402500EFDC38 /* InfoPlist.strings in Resources */,
 				B46490C515BA402600EFDC38 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46490D715BA404900EFDC38 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,28 +281,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B46490B715BA402500EFDC38 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B46490B815BA402500EFDC38 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B46490C315BA402600EFDC38 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B46490C415BA402600EFDC38 /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		B46490D515BA404900EFDC38 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B46490D615BA404900EFDC38 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,7 +388,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MainApp/MainApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "MainApp/MainApp-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sheepsystems.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,7 +402,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MainApp/MainApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "MainApp/MainApp-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sheepsystems.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,7 +416,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Worker/Worker-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Worker/Worker-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME}";
@@ -475,7 +431,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Worker/Worker-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Worker/Worker-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME}";

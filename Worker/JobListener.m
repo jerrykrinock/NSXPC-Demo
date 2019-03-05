@@ -15,7 +15,7 @@
 }
 
 - (void)doWorkOn:(NSString *)textIn
-           reply:(void (^)(Job *))reply {
+          thenDo:(void (^)(Job *))thenDo {
     NSLog(@"Worker got work: %@", textIn) ;
 
     [NSThread sleepForTimeInterval:0.3];
@@ -37,7 +37,7 @@
 
         job.answer = [answer copy];
 
-        reply(job);
+        thenDo(job);
     }
 }
 

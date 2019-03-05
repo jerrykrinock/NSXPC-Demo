@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B46490AF15BA402500EFDC38 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46490AE15BA402500EFDC38 /* Cocoa.framework */; };
+		B46490B915BA402500EFDC38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B46490B715BA402500EFDC38 /* InfoPlist.strings */; };
+		B46490BB15BA402500EFDC38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490BA15BA402500EFDC38 /* main.m */; };
+		B46490C215BA402500EFDC38 /* MainAppDel.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490C115BA402500EFDC38 /* MainAppDel.m */; };
+		B46490C515BA402600EFDC38 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B46490C315BA402600EFDC38 /* MainMenu.xib */; };
+		B46490D115BA404900EFDC38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46490D015BA404900EFDC38 /* Foundation.framework */; };
+		B46490D715BA404900EFDC38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B46490D515BA404900EFDC38 /* InfoPlist.strings */; };
+		B46490DA15BA404900EFDC38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490D915BA404900EFDC38 /* main.m */; };
+		B46490DF15BA406D00EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = B46490CF15BA404900EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc */; };
+		B46490E415BA40D400EFDC38 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490E315BA40D400EFDC38 /* Job.m */; };
+		B46490E515BA40D400EFDC38 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490E315BA40D400EFDC38 /* Job.m */; };
+		B46490ED15BA758C00EFDC38 /* JobListener.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490EC15BA758C00EFDC38 /* JobListener.m */; };
+		B46490EE15BA758C00EFDC38 /* JobListener.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490EC15BA758C00EFDC38 /* JobListener.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4C1390C15C8EE68002BA604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B46490A115BA402500EFDC38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B46490CE15BA404900EFDC38;
+			remoteInfo = greetingd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B46490DE15BA405F00EFDC38 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/XPCServices;
+			dstSubfolderSpec = 1;
+			files = (
+				B46490DF15BA406D00EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B46490AA15BA402500EFDC38 /* XPCDemoMainApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPCDemoMainApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46490AE15BA402500EFDC38 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B46490B115BA402500EFDC38 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B46490B215BA402500EFDC38 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B46490B315BA402500EFDC38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B46490B615BA402500EFDC38 /* MainApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MainApp-Info.plist"; sourceTree = "<group>"; };
+		B46490B815BA402500EFDC38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B46490BA15BA402500EFDC38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B46490BC15BA402500EFDC38 /* MainApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MainApp-Prefix.pch"; sourceTree = "<group>"; };
+		B46490C015BA402500EFDC38 /* MainAppDel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainAppDel.h; sourceTree = "<group>"; };
+		B46490C115BA402500EFDC38 /* MainAppDel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainAppDel.m; sourceTree = "<group>"; };
+		B46490C415BA402600EFDC38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B46490CF15BA404900EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.sheepsystems.XPCDemoWorker.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46490D015BA404900EFDC38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B46490D415BA404900EFDC38 /* Worker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Worker-Info.plist"; sourceTree = "<group>"; };
+		B46490D615BA404900EFDC38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B46490D815BA404900EFDC38 /* Worker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Worker-Prefix.pch"; sourceTree = "<group>"; };
+		B46490D915BA404900EFDC38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B46490E215BA40D400EFDC38 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
+		B46490E315BA40D400EFDC38 /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
+		B46490E615BA72E700EFDC38 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		B46490EB15BA758C00EFDC38 /* JobListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobListener.h; sourceTree = "<group>"; };
+		B46490EC15BA758C00EFDC38 /* JobListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobListener.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B46490A715BA402500EFDC38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46490AF15BA402500EFDC38 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46490CC15BA404900EFDC38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46490D115BA404900EFDC38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B464909F15BA402500EFDC38 = {
+			isa = PBXGroup;
+			children = (
+				B46490B415BA402500EFDC38 /* MainApp */,
+				B46490D215BA404900EFDC38 /* Worker */,
+				B46490AD15BA402500EFDC38 /* Frameworks */,
+				B46490AB15BA402500EFDC38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B46490AB15BA402500EFDC38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B46490AA15BA402500EFDC38 /* XPCDemoMainApp.app */,
+				B46490CF15BA404900EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B46490AD15BA402500EFDC38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B46490AE15BA402500EFDC38 /* Cocoa.framework */,
+				B46490D015BA404900EFDC38 /* Foundation.framework */,
+				B46490B015BA402500EFDC38 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B46490B015BA402500EFDC38 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B46490B115BA402500EFDC38 /* AppKit.framework */,
+				B46490B215BA402500EFDC38 /* CoreData.framework */,
+				B46490B315BA402500EFDC38 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B46490B415BA402500EFDC38 /* MainApp */ = {
+			isa = PBXGroup;
+			children = (
+				B46490C015BA402500EFDC38 /* MainAppDel.h */,
+				B46490C115BA402500EFDC38 /* MainAppDel.m */,
+				B46490C315BA402600EFDC38 /* MainMenu.xib */,
+				B46490B515BA402500EFDC38 /* Supporting Files */,
+				B46490E215BA40D400EFDC38 /* Job.h */,
+				B46490E315BA40D400EFDC38 /* Job.m */,
+				B46490E615BA72E700EFDC38 /* Worker.h */,
+			);
+			path = MainApp;
+			sourceTree = "<group>";
+		};
+		B46490B515BA402500EFDC38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B46490B615BA402500EFDC38 /* MainApp-Info.plist */,
+				B46490B715BA402500EFDC38 /* InfoPlist.strings */,
+				B46490BA15BA402500EFDC38 /* main.m */,
+				B46490BC15BA402500EFDC38 /* MainApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B46490D215BA404900EFDC38 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				B46490D915BA404900EFDC38 /* main.m */,
+				B46490D315BA404900EFDC38 /* Supporting Files */,
+				B46490EB15BA758C00EFDC38 /* JobListener.h */,
+				B46490EC15BA758C00EFDC38 /* JobListener.m */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		B46490D315BA404900EFDC38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B46490D415BA404900EFDC38 /* Worker-Info.plist */,
+				B46490D515BA404900EFDC38 /* InfoPlist.strings */,
+				B46490D815BA404900EFDC38 /* Worker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B46490A915BA402500EFDC38 /* XPCDemoMainApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46490C815BA402600EFDC38 /* Build configuration list for PBXNativeTarget "XPCDemoMainApp" */;
+			buildPhases = (
+				B46490A615BA402500EFDC38 /* Sources */,
+				B46490A715BA402500EFDC38 /* Frameworks */,
+				B46490A815BA402500EFDC38 /* Resources */,
+				B46490DE15BA405F00EFDC38 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4C1390D15C8EE68002BA604 /* PBXTargetDependency */,
+			);
+			name = XPCDemoMainApp;
+			productName = hello;
+			productReference = B46490AA15BA402500EFDC38 /* XPCDemoMainApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B46490CE15BA404900EFDC38 /* XPCDemoWorker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46490DB15BA404900EFDC38 /* Build configuration list for PBXNativeTarget "XPCDemoWorker" */;
+			buildPhases = (
+				B46490CB15BA404900EFDC38 /* Sources */,
+				B46490CC15BA404900EFDC38 /* Frameworks */,
+				B46490CD15BA404900EFDC38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPCDemoWorker;
+			productName = greetingd;
+			productReference = B46490CF15BA404900EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B46490A115BA402500EFDC38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = B46490A415BA402500EFDC38 /* Build configuration list for PBXProject "XPCDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B464909F15BA402500EFDC38;
+			productRefGroup = B46490AB15BA402500EFDC38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B46490A915BA402500EFDC38 /* XPCDemoMainApp */,
+				B46490CE15BA404900EFDC38 /* XPCDemoWorker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B46490A815BA402500EFDC38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46490B915BA402500EFDC38 /* InfoPlist.strings in Resources */,
+				B46490C515BA402600EFDC38 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46490CD15BA404900EFDC38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46490D715BA404900EFDC38 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B46490A615BA402500EFDC38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46490BB15BA402500EFDC38 /* main.m in Sources */,
+				B46490C215BA402500EFDC38 /* MainAppDel.m in Sources */,
+				B46490E415BA40D400EFDC38 /* Job.m in Sources */,
+				B46490ED15BA758C00EFDC38 /* JobListener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46490CB15BA404900EFDC38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B46490DA15BA404900EFDC38 /* main.m in Sources */,
+				B46490E515BA40D400EFDC38 /* Job.m in Sources */,
+				B46490EE15BA758C00EFDC38 /* JobListener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4C1390D15C8EE68002BA604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B46490CE15BA404900EFDC38 /* XPCDemoWorker */;
+			targetProxy = B4C1390C15C8EE68002BA604 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B46490B715BA402500EFDC38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B46490B815BA402500EFDC38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B46490C315BA402600EFDC38 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B46490C415BA402600EFDC38 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B46490D515BA404900EFDC38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B46490D615BA404900EFDC38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B46490C615BA402600EFDC38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		B46490C715BA402600EFDC38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		B46490C915BA402600EFDC38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MainApp/MainApp-Prefix.pch";
+				INFOPLIST_FILE = "MainApp/MainApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B46490CA15BA402600EFDC38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MainApp/MainApp-Prefix.pch";
+				INFOPLIST_FILE = "MainApp/MainApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B46490DC15BA404900EFDC38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Worker/Worker-Prefix.pch";
+				INFOPLIST_FILE = "Worker/Worker-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "com.sheepsystems.$(TARGET_NAME:rfc1034identifier)";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Debug;
+		};
+		B46490DD15BA404900EFDC38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Worker/Worker-Prefix.pch";
+				INFOPLIST_FILE = "Worker/Worker-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "com.sheepsystems.$(TARGET_NAME:rfc1034identifier)";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B46490A415BA402500EFDC38 /* Build configuration list for PBXProject "XPCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46490C615BA402600EFDC38 /* Debug */,
+				B46490C715BA402600EFDC38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46490C815BA402600EFDC38 /* Build configuration list for PBXNativeTarget "XPCDemoMainApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46490C915BA402600EFDC38 /* Debug */,
+				B46490CA15BA402600EFDC38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46490DB15BA404900EFDC38 /* Build configuration list for PBXNativeTarget "XPCDemoWorker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B46490DC15BA404900EFDC38 /* Debug */,
+				B46490DD15BA404900EFDC38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B46490A115BA402500EFDC38 /* Project object */;
+}

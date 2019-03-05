@@ -1,9 +1,10 @@
 #import "MainAppDel.h"
+#import "Constants.h"
 
 @implementation MainAppDel
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    self.connection = [[NSXPCConnection alloc] initWithServiceName: kServiceName];
+    self.connection = [[NSXPCConnection alloc] initWithServiceName:constServiceIdentifier];
     [self.connection setRemoteObjectInterface: [NSXPCInterface interfaceWithProtocol: @protocol(Worker)]];
     [self.connection resume];
 

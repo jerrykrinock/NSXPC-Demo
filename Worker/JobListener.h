@@ -1,7 +1,6 @@
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 #import "Worker.h"
-
-#define kServiceName @"com.sheepsystems.XPCDemoWorker"
 
 @interface JobListener : NSObject <NSXPCListenerDelegate, Worker>
 

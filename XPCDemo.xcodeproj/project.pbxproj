@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48EC2003222E64F1008ABD3F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EC2002222E646E008ABD3F /* Constants.m */; };
+		48EC2004222E64F2008ABD3F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EC2002222E646E008ABD3F /* Constants.m */; };
+		48EC200E222E6944008ABD3F /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EC200D222E6944008ABD3F /* Job.m */; };
+		48EC200F222E6944008ABD3F /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EC200D222E6944008ABD3F /* Job.m */; };
 		B46490AF15BA402500EFDC38 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46490AE15BA402500EFDC38 /* Cocoa.framework */; };
 		B46490B915BA402500EFDC38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B46490B715BA402500EFDC38 /* InfoPlist.strings */; };
 		B46490BB15BA402500EFDC38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490BA15BA402500EFDC38 /* main.m */; };
@@ -16,9 +20,6 @@
 		B46490D715BA404900EFDC38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B46490D515BA404900EFDC38 /* InfoPlist.strings */; };
 		B46490DA15BA404900EFDC38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490D915BA404900EFDC38 /* main.m */; };
 		B46490DF15BA406D00EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = B46490CF15BA404900EFDC38 /* com.sheepsystems.XPCDemoWorker.xpc */; };
-		B46490E415BA40D400EFDC38 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490E315BA40D400EFDC38 /* Job.m */; };
-		B46490E515BA40D400EFDC38 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490E315BA40D400EFDC38 /* Job.m */; };
-		B46490ED15BA758C00EFDC38 /* JobListener.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490EC15BA758C00EFDC38 /* JobListener.m */; };
 		B46490EE15BA758C00EFDC38 /* JobListener.m in Sources */ = {isa = PBXBuildFile; fileRef = B46490EC15BA758C00EFDC38 /* JobListener.m */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		48EC2002222E646E008ABD3F /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = SOURCE_ROOT; };
+		48EC2005222E656D008ABD3F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = SOURCE_ROOT; };
+		48EC200B222E6944008ABD3F /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = SOURCE_ROOT; };
+		48EC200C222E6944008ABD3F /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = SOURCE_ROOT; };
+		48EC200D222E6944008ABD3F /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = SOURCE_ROOT; };
 		B46490AA15BA402500EFDC38 /* XPCDemoMainApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPCDemoMainApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46490AE15BA402500EFDC38 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B46490B115BA402500EFDC38 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -64,9 +70,6 @@
 		B46490D615BA404900EFDC38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B46490D815BA404900EFDC38 /* Worker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Worker-Prefix.pch"; sourceTree = "<group>"; };
 		B46490D915BA404900EFDC38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B46490E215BA40D400EFDC38 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
-		B46490E315BA40D400EFDC38 /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
-		B46490E615BA72E700EFDC38 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
 		B46490EB15BA758C00EFDC38 /* JobListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobListener.h; sourceTree = "<group>"; };
 		B46490EC15BA758C00EFDC38 /* JobListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobListener.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,9 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48EC2001222E640A008ABD3F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				48EC2005222E656D008ABD3F /* Constants.h */,
+				48EC2002222E646E008ABD3F /* Constants.m */,
+				48EC200B222E6944008ABD3F /* Job.h */,
+				48EC200D222E6944008ABD3F /* Job.m */,
+				48EC200C222E6944008ABD3F /* Worker.h */,
+			);
+			name = Common;
+			path = MainApp;
+			sourceTree = "<group>";
+		};
 		B464909F15BA402500EFDC38 = {
 			isa = PBXGroup;
 			children = (
+				48EC2001222E640A008ABD3F /* Common */,
 				B46490B415BA402500EFDC38 /* MainApp */,
 				B46490D215BA404900EFDC38 /* Worker */,
 				B46490AD15BA402500EFDC38 /* Frameworks */,
@@ -137,9 +154,6 @@
 				B46490C115BA402500EFDC38 /* MainAppDel.m */,
 				B46490C315BA402600EFDC38 /* MainMenu.xib */,
 				B46490B515BA402500EFDC38 /* Supporting Files */,
-				B46490E215BA40D400EFDC38 /* Job.h */,
-				B46490E315BA40D400EFDC38 /* Job.m */,
-				B46490E615BA72E700EFDC38 /* Worker.h */,
 			);
 			path = MainApp;
 			sourceTree = "<group>";
@@ -268,8 +282,8 @@
 			files = (
 				B46490BB15BA402500EFDC38 /* main.m in Sources */,
 				B46490C215BA402500EFDC38 /* MainAppDel.m in Sources */,
-				B46490E415BA40D400EFDC38 /* Job.m in Sources */,
-				B46490ED15BA758C00EFDC38 /* JobListener.m in Sources */,
+				48EC2004222E64F2008ABD3F /* Constants.m in Sources */,
+				48EC200E222E6944008ABD3F /* Job.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B46490DA15BA404900EFDC38 /* main.m in Sources */,
-				B46490E515BA40D400EFDC38 /* Job.m in Sources */,
 				B46490EE15BA758C00EFDC38 /* JobListener.m in Sources */,
+				48EC2003222E64F1008ABD3F /* Constants.m in Sources */,
+				48EC200F222E6944008ABD3F /* Job.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,10 +1,9 @@
 #import <Cocoa/Cocoa.h>
 #import "Worker.h"
+#import "Constants.h"
 
 @interface MainAppDel : NSObject <NSApplicationDelegate> {
 }
-
-#define kServiceName @"com.sheepsystems.XPCDemoWorker"
 
 @property (assign) IBOutlet NSWindow* window;
 @property (weak) IBOutlet NSButton* button;

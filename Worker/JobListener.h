@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "Constants.h"
-#import "Worker.h"
+#import "WorkerProtocol.h"
 
-@interface JobListener : NSObject <NSXPCListenerDelegate, Worker>
+@interface JobListener : NSObject <NSXPCListenerDelegate, WorkerProtocol>
 
 @end

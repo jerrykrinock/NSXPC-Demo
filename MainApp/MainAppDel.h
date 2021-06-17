@@ -1,5 +1,5 @@
 #import <Cocoa/Cocoa.h>
-#import "Worker.h"
+#import "WorkerProtocol.h"
 #import "Constants.h"
 
 @interface MainAppDel : NSObject <NSApplicationDelegate> {
@@ -10,7 +10,7 @@
 @property (weak) IBOutlet NSTextField* textInField;
 @property (weak) IBOutlet NSTextField* textOutField;
 @property (strong) NSXPCConnection* connection;
-@property (strong) id <Worker> job;
+@property (strong) id <WorkerProtocol> job;
 
 - (IBAction) doWork:(id)sender;
 

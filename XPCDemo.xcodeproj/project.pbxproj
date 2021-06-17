@@ -48,7 +48,7 @@
 		48EC2002222E646E008ABD3F /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = SOURCE_ROOT; };
 		48EC2005222E656D008ABD3F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = SOURCE_ROOT; };
 		48EC200B222E6944008ABD3F /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = SOURCE_ROOT; };
-		48EC200C222E6944008ABD3F /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = SOURCE_ROOT; };
+		48EC200C222E6944008ABD3F /* WorkerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkerProtocol.h; sourceTree = SOURCE_ROOT; };
 		48EC200D222E6944008ABD3F /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = SOURCE_ROOT; };
 		B46490AA15BA402500EFDC38 /* XPCDemoMainApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPCDemoMainApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46490AE15BA402500EFDC38 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -95,7 +95,7 @@
 				48EC2002222E646E008ABD3F /* Constants.m */,
 				48EC200B222E6944008ABD3F /* Job.h */,
 				48EC200D222E6944008ABD3F /* Job.m */,
-				48EC200C222E6944008ABD3F /* Worker.h */,
+				48EC200C222E6944008ABD3F /* WorkerProtocol.h */,
 			);
 			name = Common;
 			path = MainApp;
@@ -216,6 +216,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = B464909F15BA402500EFDC38;

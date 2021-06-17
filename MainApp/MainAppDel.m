@@ -5,7 +5,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.connection = [[NSXPCConnection alloc] initWithServiceName:constServiceIdentifier];
-    [self.connection setRemoteObjectInterface: [NSXPCInterface interfaceWithProtocol: @protocol(Worker)]];
+    [self.connection setRemoteObjectInterface: [NSXPCInterface interfaceWithProtocol: @protocol(WorkerProtocol)]];
     [self.connection resume];
 
     self.job = [self.connection remoteObjectProxyWithErrorHandler:^(NSError *error) {

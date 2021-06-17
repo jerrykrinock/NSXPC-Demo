@@ -5,7 +5,7 @@
 
 - (BOOL)          listener:(NSXPCListener *)listener
  shouldAcceptNewConnection:(NSXPCConnection *)newConnection {
-    [newConnection setExportedInterface: [NSXPCInterface interfaceWithProtocol:@protocol(Worker)]];
+    [newConnection setExportedInterface: [NSXPCInterface interfaceWithProtocol:@protocol(WorkerProtocol)]];
     [newConnection setExportedObject: self];
 
     [newConnection resume];

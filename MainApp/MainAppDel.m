@@ -8,11 +8,16 @@
     [self.connection setRemoteObjectInterface: [NSXPCInterface interfaceWithProtocol: @protocol(Worker)]];
     [self.connection resume];
 
-    self.job = [self.connection remoteObjectProxyWithErrorHandler:^(NSError *err) {
+    self.job = [self.connection remoteObjectProxyWithErrorHandler:^(NSError *error) {
         /* UI access must be on main thread. */
         dispatch_queue_t mainQueue = dispatch_get_main_queue() ;
         dispatch_sync(mainQueue, ^{
-            self.textOutField.stringValue = @"🙁 Too many characters";
+            self.textOutField.stringValue = [[NSString alloc] initWithFormat:
+                                             @"%@:\n%@ %ld:\n%@",
+                                             [NSDate date],
+                                             error.domain,
+                                             (long)error.code,
+                                             error.localizedDescription];
         }) ;
     }];
 }
@@ -24,7 +29,10 @@
                      /* UI access must be on main thread. */
                      dispatch_queue_t mainQueue = dispatch_get_main_queue() ;
                      dispatch_sync(mainQueue, ^{
-                         self.textOutField.stringValue = job.answer;
+                         self.textOutField.stringValue = [NSString stringWithFormat:
+                                                          @"Answer from Worker\nversion %ld:\n\n%@",
+                                                          job.workerVersion,
+                                                          job.answer];
                      }) ;
                  }];
 }

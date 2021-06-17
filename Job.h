@@ -4,5 +4,6 @@
 }
 
 @property (copy) NSString* answer;
+@property (assign) NSInteger workerVersion;
 
 @end

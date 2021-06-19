@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:hello.xcodeproj">
+      location = "self:/Users/jk/Documents/Programming/Projects/NSXPC-Demo/XPCDemo.xcodeproj">
    </FileRef>
 </Workspace>

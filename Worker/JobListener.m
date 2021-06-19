@@ -1,14 +1,35 @@
 #import "JobListener.h"
 #import "Job.h"
 
+@interface JobListener()
+
+@property (weak) NSXPCConnection* connection;
+
+@end
+
 @implementation JobListener
 
-- (BOOL)          listener:(NSXPCListener *)listener
- shouldAcceptNewConnection:(NSXPCConnection *)newConnection {
-    [newConnection setExportedInterface: [NSXPCInterface interfaceWithProtocol:@protocol(WorkerProtocol)]];
-    [newConnection setExportedObject: self];
++ (NSInteger)hardCodedWorkerVersion {
+    /* If you have any suspicion that the system may be running an older
+     version of your Worker, change this.  Note that this code (JobListener)
+     is only built into the Worker, not the MainApp.  */
+    return 102;
+}
 
-    [newConnection resume];
+- (BOOL)          listener:(NSXPCListener*)listener
+ shouldAcceptNewConnection:(NSXPCConnection*)connection {
+    self.connection = connection;
+
+    NSXPCInterface* forwardInterface = [NSXPCInterface interfaceWithProtocol:@protocol(WorkerForwardProtocol)];
+    connection.exportedInterface = forwardInterface;
+    connection.exportedObject = self;
+
+    /* This section is only needed if your XPC service needs the capability
+     to initiate messages back to the main app. */
+    NSXPCInterface* reverseInterface = [NSXPCInterface interfaceWithProtocol:@protocol(WorkerReverseProtocol)];
+    connection.remoteObjectInterface = reverseInterface;
+
+    [connection resume];
 
     return YES;
 }
@@ -33,13 +54,19 @@
         }
 
         job.answer = [answer copy];
-        /* We hard code the workerVersion here.  Change it to verify that the
-         newest version of the agent is being launched by macOS.  Note that
-         this code (JobListener) is only built into the Worker, not the
-         MainApp.  */
-        job.workerVersion = 101;
+        job.workerVersion = [[self class] hardCodedWorkerVersion];
 
+        NSString* message = @"You owe me $2 for my work.\n"
+        @"Thank you for your business.";
+        
         thenDo(job);
+
+        NSTimeInterval delayForInvoice = 2.0;
+        dispatch_after(
+                       dispatch_time(DISPATCH_TIME_NOW, delayForInvoice * NSEC_PER_SEC),
+                       dispatch_get_main_queue(), ^{
+            [[self.connection remoteObjectProxy] workerInitiatedMessage:message];
+        });
     }
 }
 

@@ -5,7 +5,16 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.connection = [[NSXPCConnection alloc] initWithServiceName:constServiceIdentifier];
-    [self.connection setRemoteObjectInterface: [NSXPCInterface interfaceWithProtocol: @protocol(WorkerProtocol)]];
+
+    NSXPCInterface* forwardInterface = [NSXPCInterface interfaceWithProtocol:@protocol(WorkerForwardProtocol)];
+    self.connection.remoteObjectInterface = forwardInterface;
+
+    /* This section is only needed if your XPC service needs the capability
+     to initiate messages back to the main app. */
+    NSXPCInterface* reverseInterface = [NSXPCInterface interfaceWithProtocol:@protocol(WorkerReverseProtocol)];
+    self.connection.exportedInterface = reverseInterface;
+    self.connection.exportedObject = self;
+
     [self.connection resume];
 
     self.job = [self.connection remoteObjectProxyWithErrorHandler:^(NSError *error) {
@@ -30,11 +39,26 @@
                      dispatch_queue_t mainQueue = dispatch_get_main_queue() ;
                      dispatch_sync(mainQueue, ^{
                          self.textOutField.stringValue = [NSString stringWithFormat:
-                                                          @"Answer from Worker\nversion %ld:\n\n%@",
+                                                          @"Answer from Worker v%ld:\n"
+                                                          @"   %@",
                                                           job.workerVersion,
                                                           job.answer];
                      }) ;
                  }];
+}
+
+- (void)workerInitiatedMessage:(NSString*)message {
+    /* UI access must be on main thread. */
+    dispatch_queue_t mainQueue = dispatch_get_main_queue() ;
+    dispatch_sync(mainQueue, ^{
+        self.textOutField.stringValue = [NSString stringWithFormat:
+                                         @"%@\n"
+                                         @"\n"
+                                         @"Got message from Worker:\n"
+                                         @"%@",
+                                         self.textOutField.stringValue,
+                                         message];
+    }) ;
 }
 
 @end
